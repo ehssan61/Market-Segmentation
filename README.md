@@ -9,7 +9,7 @@ CustomerID and Description were removed, and canceled transactions were filtered
 invoice numbers that start with 'C'. Additionally, transactions with non-positive Quantity or
 UnitPrice were excluded to ensure meaningful purchase data.
 
-![segmentation](./segmentation.png)
+![segmentation](figs/segmentation.png)
 
 
 RFM features were then derived as follows: Recency was calculated as the number of days since
