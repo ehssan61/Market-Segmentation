@@ -1,4 +1,4 @@
-# Market-Segmentation
+# Market Segmentation
 The Online Retail dataset is a transactional dataset that contains detailed records of purchases made by customers from a UK-based online retail store between December 2010 and December 2011. It includes approximately 500,000 rows of data with features such as Invoice Number, Stock Code, Description, Quantity, Invoice Date, Unit Price, Customer ID, and Country. This dataset is commonly used for exploratory data analysis, market segmentation, and customer behavior modeling. Due to its real-world structure and mix of numeric, categorical, and temporal data, it is especially popular in projects involving RFM analysis, clustering, and sales forecasting.
 
 ## Preprocessing
