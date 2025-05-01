@@ -1,8 +1,7 @@
 # Market-Segmentation
-The Online retail dataset was one of the ones that we used in our first group problem set project.
-I included some parts of our prior analysis in this report.
+The Online Retail dataset is a transactional dataset that contains detailed records of purchases made by customers from a UK-based online retail store between December 2010 and December 2011. It includes approximately 500,000 rows of data with features such as Invoice Number, Stock Code, Description, Quantity, Invoice Date, Unit Price, Customer ID, and Country. This dataset is commonly used for exploratory data analysis, market segmentation, and customer behavior modeling. Due to its real-world structure and mix of numeric, categorical, and temporal data, it is especially popular in projects involving RFM analysis, clustering, and sales forecasting.
 
-## Preprocessing:
+## Preprocessing
 In the preprocessing phase, the dataset was cleaned and transformed to compute RFM (Recency,
 Frequency, Monetary) features for customer segmentation. Missing values in key fields like
 CustomerID and Description were removed, and canceled transactions were filtered out using
@@ -32,7 +31,7 @@ be rewarded with exclusive offers, while inactive ones can be targeted with reac
 campaigns. Segmenting customers based on RFM ensures that marketing resources are directed
 strategically, improving both customer retention and return on investment.
 
-## Classical Clustering:
+## Classical Clustering
 In the classical clustering step, the K-Means algorithm was applied to the cleaned RFM dataset
 to segment customers based on their purchasing behavior. Before clustering, the optimal number
 of clusters was determined using the Elbow Method and Silhouette Score, which helped evaluate
@@ -45,7 +44,7 @@ purchases that are counted as ideal candidates for loyalty programs while anothe
 inactive or low-spending customers suitable for re-engagement campaigns. This segment enables
 more personalized and effective marketing strategies.
 
-## Generative Modeling:
+## Generative Modeling
 In the second part of clustering, we used Gaussian Mixture Models (GMM) to perform
 probabilistic clustering on the RFM features. Unlike K-Means, which assigns each customer to a
 single cluster, GMM calculates the probability of each customer belonging to multiple clusters.
@@ -64,7 +63,7 @@ application of clustering algorithms like K-Means and GMM. Introducing an autoen
 case would add unnecessary complexity without significant benefit, especially when the goal is
 to maintain interpretability in segmenting customer behavior.
 
-## Segment Interpretation and Comparisons:
+## Segment Interpretation and Comparisons
 The visual comparison between K-Means and GMM clustering on RFM data were much
 different. K-Means creates more distinct, well-separated clusters with clearly defined boundaries
 across all RFM pair plots. In contrast, GMM's segments appear more overlapping and diffuse,
